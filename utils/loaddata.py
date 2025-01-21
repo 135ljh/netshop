@@ -34,7 +34,7 @@ def test_model():
                 for _spec in goods['specs']:
                     goodsdetails = GoodsDetailName.objects.create(gdname=_spec[0])
                     for img in _spec[1]:
-                        GoodDetail.objects.create(goods=good,goodsdname=goodsdetails,gdurl=img)
+                        GoodsDetail.objects.create(goods=good,goodsdname=goodsdetails,gdurl=img)
 
                 for c in colors:
                     for s in sizes:
