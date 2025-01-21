@@ -18,7 +18,7 @@
 
             {% for goods in goodsList %}
             	 <div class="good">
-                        <a href="/goods/goodsdetails/4">
+                        <a href="/goods/goodsdetails/{{ good.id }}">
                             <img src="{{ goods.getColorImg }}" width="285px" height="285px">
                             <p class="name">{{ goods.gname }}</p>
                             <div class="price">
