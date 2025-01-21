@@ -16,6 +16,10 @@ class Goods(models.Model):
     def __str__(self):
         return f'<Goods: {self.gname}>'
 
+    def getColorImg(self):
+        return self.inventory_set.first().color.colorurl
+
+
 class GoodsDetailName(models.Model):
     gdname = models.CharField(max_length=30)
 

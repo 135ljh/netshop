@@ -1,6 +1,7 @@
-from django.urls import path
+from django.urls import path,re_path
 from goodsapp import views
 
 urlpatterns = [
     path('', views.IndexView.as_view()),
+    re_path(r'^category/(?P<cid>\d+)$', views.IndexView.as_view()),
 ]
